@@ -1,0 +1,73 @@
+body,html{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+/*总体布局*/
+.user{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: space-between;
+    background-color: #F5F5F5;
+}
+.empty{
+    flex: 1;
+}
+
+/*登陆部分*/
+.container{
+    width: 360px;
+    height: 450px;
+    margin: 0px auto;
+    padding: 5px;
+    background-color: white;
+    /*border: 1px solid gray;*/
+    text-align: center;
+    /*相对定位*/
+    position: relative;
+}
+.container .sprite{
+    /*绝对定位*/
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/*login登录主要区域*/
+.login{
+    margin-top: 10px; 
+}
+.login header h2{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.login header input{
+    height: 50px;
+    margin: 10px 0px;
+}
+.login header button{
+    width: 100%;
+    height: 50px;
+    background-color: darkorange;
+    font-size: 16px;
+    color: white;
+    margin: 30px 0px;
+}
+.login footer{
+    font-size: 16px;
+}
+.login footer a{
+    color: black;
+}
+
+/*address*/
+address p{
+    text-align: center;
+    font-size: 18px;
+}
+address a{
+    color: black;
+}

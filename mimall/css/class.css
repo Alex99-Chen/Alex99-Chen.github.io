@@ -1,0 +1,106 @@
+html 
+{
+font-size: 62.5%
+}
+
+@media only screen and (min-width:321px) /*iphone5*/
+{
+    html { font-size: 62.5%!important }
+}
+
+@media only screen and (min-width:361px) 
+{
+    html { font-size: 70.31%!important }
+}
+
+@media only screen and (min-width:376px) /*iphone6*/
+{ 
+    html { font-size: 73.24%!important }
+}
+
+@media only screen and (min-width:481px) 
+{
+    html { font-size: 94%!important }
+}
+
+@media only screen and (min-width:561px) 
+{
+    html { font-size: 109%!important }
+}
+
+@media only screen and (min-width:641px) 
+{
+    html { font-size: 125%!important }
+}
+/*字体随屏幕变大变小*/
+body,ul,li,h2{
+    margin: 0px;
+    padding: 0px;
+} 
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+header{
+    background-color: lightblue;
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*content*/
+main div{
+    margin: 2rem 1rem;
+    text-align: center;
+    background-color: white;
+}
+main .class-three{
+    margin-bottom: 7rem;
+}
+main .class h2{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+main .class ul{
+    overflow: hidden;
+}
+main .class ul li{
+    list-style: none;
+    font-size: 1.5rem;
+
+    padding: 0px;
+}
+main .class ul li a{
+    color: black;
+}
+main .class ul li a img{
+    width: 100%;
+}
+
+
+
+/*footer*/
+footer ul{
+    padding: 0px;
+}
+footer ul li{
+    list-style: none;
+    margin-top: 1rem;
+    text-align: center;
+}
+footer ul li span{
+    font-size: 1.5rem;
+}
+footer ul li a{
+    font-size: 1rem;
+}
+footer ul li a:hover{
+    color: orange;
+}
+footer ul li:nth-child(2) a{
+    color: orange;
+}
