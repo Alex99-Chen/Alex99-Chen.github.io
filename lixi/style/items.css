@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+}
+.container{
+    border: 2px solid indigo;
+    padding: 0px;
+}
+.container .header img{
+    width: 100%;
+    height: 500px;
+}
+.container .header h2{
+    text-align: center;
+    color: lawngreen;
+    margin: 0px;
+    padding: 15px 0px;
+    border-bottom: 2px solid lawngreen;
+}
+
+/*内容区域布局*/
+.content{
+    padding: 0px 30px;
+}
+.content .pic{
+    width: 15px;
+    height: 1850px; 
+    margin: 0px auto;
+    background-image: url(image/line.png);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+
+.left,.right,.main{
+    float: left;
+}
+.content .left{
+    width: 45%;
+    /*background-color: red;*/
+    
+}
+.content .main{
+    width: 10%;
+}
+.content .right{
+    /*background-color: green;*/
+    width: 45%;
+   
+}
+/*左边图谱项目*/
+.content .left .left-item{
+    width: 100%;
+    /*height: 200px;*/
+    border: 1px solid gray;
+    margin: 40px 0px;
+    padding: 5px;
+    position: relative;
+}
+.left-item .left-pic{
+    width: 100%;
+}
+.right-row,.left-row{
+    width: 36px;
+    height: 40px;
+}
+.content .left-icon{
+    position: absolute;
+    top: 30px;
+    right: -75px;
+}
+
+/*右边图谱项目*/
+.content .right .right-item{
+    width: 100%;
+    /*height: 200px;*/
+    border: 1px solid gray;
+    margin-bottom: 50px;
+    padding: 5px;
+    position: relative;
+}
+.right-item .right-pic{
+    width: 100%;
+}
+.content .right-icon{
+    position: absolute;
+    top: 30px;
+    left: -75px;
+}
+.content .right .one{
+    margin-top: 100px;
+}
+p{
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
+
+
+
+

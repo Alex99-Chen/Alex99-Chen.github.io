@@ -1,0 +1,62 @@
+body{
+    margin: 0px;
+   
+}
+/*.container{
+     line-height: 10px;
+}*/
+.container .header{
+    height: 400px;
+    background: url(image/xq-1.jpg);
+    background-size: cover;
+    
+}
+.tel button:nth-child(2){
+    float: right;
+}
+.btn{
+    border: 1px solid green;
+    color: green;
+}
+.btn a{
+    color: green;
+}
+.content .base-info a{
+    float: right;
+}
+.content .base-info span{
+    display: block;
+    padding: 5px 0px;
+}
+h4{
+    display: inline-block;
+    margin: 10px 0px 5px 15px;
+}
+.content,.tel{
+    background-color: lightgrey;
+}
+section{
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+}
+section .icon{
+    width: 30px; 
+    height: 30px;
+    margin: 5px 0px;
+}
+section div,section p{
+   
+    border-bottom: 1px solid lightgray;
+}
+.address .map{
+    width: 100%;
+    margin-top: 10px;
+}
+section p{
+    padding: 10px
+}
+section .up{
+    position: relative;
+    left: calc(50% - 50px / 2);
+}
