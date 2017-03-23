@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dataset</title>
+</head>
+<body>
+    <!--
+        在html标签中常常使用data-xxx的形式存储一些自定义数据 
+            用于在js中计算或者数据参数传递
+            在js中使用 dataset属性可以获取标签传递的值
+            也可以通过dataset进行属性值的设置
+    -->
+    <h1 aaaa='h1' data-aaaa='h1-data' b='123' data-x='呵呵'>标签h1</h1>
+    <ul>
+        <li data-id="1" data-click="1" onclick="clickHandle(event)">li-1</li>
+        <li data-id="2" data-click="1" onclick="clickHandle(event)">li-2</li>
+        <li data-id="3" data-click="1" onclick="clickHandle(event)">li-3</li>
+        <li data-id="4" data-click="1" onclick="clickHandle(event)">li-4</li>
+        <li data-id="5" data-click="1" onclick="clickHandle(event)">li-5</li>
+    </ul>
+
+    <div data-directX='1' data-directY='1' style="width:200px;height:200px;border-radius: 50%;background-color: orange"></div>
+    <script>
+        var h1 = document.querySelector('h1') //获取页面中的h1标签
+        console.dir(h1)
+        console.log(h1.aaaa)//
+        console.log(h1.b)//
+        console.log(h1.dataset)//
+        console.log(h1.ccccc)//
+        console.log(h1.dataset['aaaa']) //h1-data
+        function clickHandle(event){
+            console.log(event.target) //获取点击的标签
+            console.log(event.target.dataset['id'])
+            event.target.dataset['click'] = event.target.dataset['click']*1 + 1 //设置dataset值
+            alert('此标签被点击了'+event.target.dataset['click']+'次')
+        }
+    </script>
+</body>
+</html>
